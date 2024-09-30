@@ -1,5 +1,7 @@
 module "roboshop"{
     source = "../terraform-aws-vpc"
+    ####Refering module from git hub==> using others's module hosted on github
+    #source = "git::https://github.com/devopsncloud/terraform-aws-vpc.git?ref=main"
     project_name = var.project_name
     environment = var.environment
     common_tags = var.common_tags
